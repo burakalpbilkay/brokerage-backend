@@ -1,4 +1,4 @@
-# Brokerage Service
+# Brokerage Backend
 
 Small Spring Boot service for a brokerage firm. Supports creating/listing/canceling orders, listing assets, and (admin-only) matching orders. Uses HTTP Basic auth, JPA, and H2 by default.
 
@@ -14,12 +14,6 @@ Small Spring Boot service for a brokerage firm. Supports creating/listing/cancel
 ```
 H2 console: `http://localhost:8080/h2-console` (username: `sa`, no password).
 
-```
-Then:
-```bash
-SPRING_PROFILES_ACTIVE=local ./mvnw spring-boot:run
-```
-
 ### Admin & Seed
 - Admin user is in-memory (configure in `application.yml`):
   ```yaml
@@ -33,7 +27,7 @@ SPRING_PROFILES_ACTIVE=local ./mvnw spring-boot:run
 All endpoints require Basic auth.
 
 ### Current Customer's Profile
-`GET /api/customers/me` → current user’s profile.
+`GET /api/customers/me` - current user’s profile.
 
 ### Assets
 `GET /api/assets?customerId={uuid}[&assetName=...]`  
