@@ -1,0 +1,25 @@
+# Build
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Coverage
+/site/
+.jacoco/
+
